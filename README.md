@@ -1,3 +1,8 @@
+---
+export_on_save:
+ html: true
+---
+
 # 目录
 
 ## 机器算法学习
