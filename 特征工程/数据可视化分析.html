@@ -363,11 +363,12 @@ plt.show()
 <a href="https://www.sohu.com/a/220236877_434937">&#x7BB1;&#x7EBF;&#x56FE;&#x70B9;&#x4F4D;&#x8BA1;&#x7B97;</a><br>
 <a href="https://www.zhihu.com/question/61358774?sort=created">&#x504F;&#x6001;&#x5206;&#x5E03;</a><br>
 <a href="https://blog.csdn.net/dujiahei/article/details/82056283">&#x7BB1;&#x7EBF;&#x56FE;&#x4F7F;&#x7528;</a></p>
-<h1 class="mume-header" id="%E6%95%A3%E7%82%B9%E7%9F%A9%E9%98%B5%E5%9B%BE">&#x6563;&#x70B9;&#x77E9;&#x9635;&#x56FE;</h1>
+<h1 class="mume-header" id="%E6%95%A3%E7%82%B9%E7%9F%A9%E9%98%B5%E5%9B%BE%E7%9B%B8%E5%85%B3%E6%80%A7%E7%83%AD%E5%8A%9B%E5%9B%BE">&#x6563;&#x70B9;&#x77E9;&#x9635;&#x56FE;&#xFF0C;&#x76F8;&#x5173;&#x6027;&#x70ED;&#x529B;&#x56FE;</h1>
 
 <p>&#x6563;&#x70B9;&#x77E9;&#x9635;&#x56FE;(Pairs Plot)&#x4E3B;&#x8981;&#x662F;&#x7528;&#x6765;&#x89C2;&#x5BDF;&#x591A;&#x7EC4;&#x53D8;&#x91CF;&#x4E24;&#x4E24;&#x4E4B;&#x95F4;&#x7684;&#x5173;&#x7CFB;&#x7684;&#xFF0C;&#x901A;&#x8FC7;&#x4E24;&#x4E24;&#x53D8;&#x91CF;&#x7684;&#x6563;&#x70B9;&#x56FE;&#x53EF;&#x4EE5;&#x770B;&#x51FA;&#x8FD9;&#x4E24;&#x4E2A;&#x53D8;&#x91CF;&#x4E4B;&#x95F4;&#x7684;&#x76F8;&#x5173;&#x6027;&#xFF1A;&#x6B63;&#x8D1F;&#x76F8;&#x5173;&#x6216;&#x8005;&#x65E0;&#x5173;&#x3002;</p>
 <p>&#x9996;&#x5148;&#x753B;&#x4E00;&#x4E2A;&#x5168;&#x90E8;&#x7279;&#x5F81;&#x7684;&#x6563;&#x70B9;&#x77E9;&#x9635;&#x56FE;&#x505A;&#x4E00;&#x4E0B;&#x7B80;&#x5355;&#x7684;&#x5206;&#x6790;&#x3002;</p>
-<pre data-role="codeBlock" data-info class="language-"><code>sns.pairplot(data=data.iloc[0:100, 0:6], hue=&apos;diagnosis&apos;)
+<pre data-role="codeBlock" data-info class="language-"><code># &#x6563;&#x70B9;&#x77E9;&#x9635;&#x56FE;
+sns.pairplot(data=data.iloc[0:100, 0:6], hue=&apos;diagnosis&apos;)
 plt.show()
 </code></pre><p><img src="images/%E4%B9%B3%E8%85%BA%E7%99%8C%E6%95%B0%E6%8D%AE%E9%9B%86-%E6%95%A3%E7%82%B9%E7%9F%A9%E9%98%B5%E5%9B%BE.png" alt="&#x4E73;&#x817A;&#x764C;&#x6570;&#x636E;&#x96C6;-&#x6563;&#x70B9;&#x77E9;&#x9635;&#x56FE;"></p>
 <ol>
@@ -384,6 +385,18 @@ plt.show()
 <p>&#x5982;&#x679C;&#x8981;&#x91CF;&#x5316;&#x76F8;&#x5173;&#x6027;&#xFF0C;&#x66F4;&#x52A0;&#x76F4;&#x89C2;&#x7684;&#x5206;&#x6790;&#x76F8;&#x5173;&#x7CFB;&#x6570;&#x7684;&#x8BDD;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x76F8;&#x5173;&#x6027;&#x70ED;&#x529B;&#x56FE;&#x3002;</p>
 </li>
 </ol>
+<p>&#x65E2;&#x7136;&#x6563;&#x70B9;&#x77E9;&#x9635;&#x56FE;&#x662F;&#x5C55;&#x793A;&#x7279;&#x5F81;&#x76F8;&#x5173;&#x6027;&#x7684;&#xFF0C;&#x90A3;&#x4E48;&#x53EF;&#x4EE5;&#x548C;&#x76F8;&#x5173;&#x6027;&#x70ED;&#x529B;&#x56FE;&#x505A;&#x4E00;&#x4E2A;&#x5BF9;&#x6BD4;&#x3002;</p>
+<pre data-role="codeBlock" data-info class="language-"><code># &#x76F8;&#x5173;&#x6027;&#x70ED;&#x529B;&#x56FE;
+# DataFrame&#x8F6C;ndarray
+arr = data.iloc[0:100, 1:6].values
+# &#x6CE8;&#x610F;&#xFF0C;&#x8FD9;&#x91CC;&#x8BA1;&#x7B97;&#x7684;&#x662F;&#x7279;&#x5F81;&#x503C;&#x7684;&#x76F8;&#x5173;&#x7CFB;&#x6570;&#xFF0C;&#x6240;&#x4EE5;&#x6BCF;&#x884C;&#x7684;&#x6570;&#x636E;&#x662F;&#x5355;&#x4E00;&#x7279;&#x5F81;&#x503C;&#x7684;&#x6570;&#x636E;
+corr = np.corrcoef(arr.T)
+f, ax = plt.subplots(figsize=(10,10))
+sns.heatmap(data=corr, annot=True)
+plt.show()
+
+</code></pre><p><img src="images/%E4%B9%B3%E8%85%BA%E7%99%8C%E6%95%B0%E6%8D%AE%E9%9B%86-%E7%9B%B8%E5%85%B3%E6%80%A7%E7%83%AD%E5%8A%9B%E5%9B%BE.png" alt="&#x4E73;&#x817A;&#x764C;&#x6570;&#x636E;&#x96C6;-&#x76F8;&#x5173;&#x6027;&#x70ED;&#x529B;&#x56FE;"></p>
+<p>&#x4ECE;&#x4E0A;&#x9762;&#x7684;&#x70ED;&#x529B;&#x56FE;&#x53EF;&#x4EE5;&#x770B;&#x51FA;&#x6765;&#xFF0C;&#x7EA2;&#x6846;&#x5185;&#x7684;&#x4E09;&#x4E2A;&#x5730;&#x65B9;&#x503C;&#x90FD;&#x63A5;&#x8FD1;&#x4E8E;1&#xFF0C;&#x5BF9;&#x5E94;&#x4E0A;&#x9762;&#x7684;&#x6563;&#x70B9;&#x77E9;&#x9635;&#x56FE;&#x7684;&#x63CF;&#x8FF0;&#x3002;</p>
 <p>&#x540E;&#x7EED;&#x7684;&#x601D;&#x8003;&#xFF1A;</p>
 <ol>
 <li>&#x76F8;&#x5173;&#x6027;&#x5F88;&#x9AD8;&#x7684;&#x4E24;&#x4E2A;&#x7279;&#x5F81;&#x503C;&#x5728;&#x56DE;&#x5F52;&#x6A21;&#x578B;&#x9884;&#x6D4B;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4F1A;&#x5E26;&#x6765;&#x4EC0;&#x4E48;&#x95EE;&#x9898;&#x5417;&#xFF1F;</li>
@@ -393,6 +406,43 @@ plt.show()
 <p>&#x591A;&#x91CD;&#x5171;&#x7EBF;&#x6027;&#xFF08;Multicollinearity&#xFF09;&#x662F;&#x6307;&#x7EBF;&#x6027;&#x56DE;&#x5F52;&#x6A21;&#x578B;&#x4E2D;&#x7684;&#x81EA;&#x53D8;&#x91CF;&#x4E4B;&#x95F4;&#x7531;&#x4E8E;&#x5B58;&#x5728;&#x9AD8;&#x5EA6;&#x76F8;&#x5173;&#x5173;&#x7CFB;&#x800C;&#x4F7F;&#x6A21;&#x578B;&#x7684;&#x6743;&#x91CD;&#x53C2;&#x6570;&#x4F30;&#x8BA1;&#x5931;&#x771F;&#x6216;&#x96BE;&#x4EE5;&#x4F30;&#x8BA1;&#x51C6;&#x786E;&#x7684;&#x4E00;&#x79CD;&#x7279;&#x6027;&#xFF0C;&#x591A;&#x91CD;&#x662F;&#x6307;&#x4E00;&#x4E2A;&#x81EA;&#x53D8;&#x91CF;&#x53EF;&#x80FD;&#x4E0E;&#x591A;&#x4E2A;&#x5176;&#x4ED6;&#x81EA;&#x53D8;&#x91CF;&#x4E4B;&#x95F4;&#x5B58;&#x5728;&#x76F8;&#x5173;&#x5173;&#x7CFB;&#x3002;</p>
 <hr>
 <ol start="2">
+<li>&#x591A;&#x91CD;&#x5171;&#x7EBF;&#x6027;&#x4F1A;&#x9020;&#x6210;&#x4EC0;&#x4E48;&#x540E;&#x679C;&#xFF1F;</li>
+</ol>
+<p>&#x591A;&#x91CD;&#x5171;&#x7EBF;&#x6027;&#x5BF9;&#x6743;&#x91CD;&#x53C2;&#x6570;&#x4F30;&#x8BA1;&#x4F1A;&#x9020;&#x6210;&#x5F71;&#x54CD;&#xFF0C;&#x5BFC;&#x81F4;&#x6743;&#x91CD;&#x53C2;&#x6570;&#x4F1A;&#x5F88;&#x5927;&#xFF0C;&#x8FDB;&#x800C;&#x65B9;&#x5DEE;&#x5F88;&#x5927;&#xFF0C;&#x5BFC;&#x81F4;&#x8FC7;&#x62DF;&#x5408;&#x73B0;&#x8C61;&#x3002;</p>
+<pre data-role="codeBlock" data-info class="language-"><code># &#x6211;&#x4EEC;&#x4F7F;&#x7528;LinearRegression&#x6F14;&#x793A;&#x4E00;&#x4E0B;&#x76F8;&#x5173;&#x6027;&#x5F88;&#x9AD8;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x5BF9;&#x6743;&#x91CD;&#x53C2;&#x6570;&#x9884;&#x6D4B;&#x7684;&#x5F71;&#x54CD;
+from sklearn.linear_model import LinearRegression
+
+# 1. &#x6570;&#x636E;&#x51C6;&#x5907;
+X = np.array([[0.9999, 2], [2, 4], [4, 8]])
+y = np.array([1, 2, 3])
+
+# &#x6C42;&#x5F97;&#x6A21;&#x578B;&#x53C2;&#x6570;
+lr = LinearRegression()
+lr.fit(X, y)
+print(lr.coef_)
+</code></pre><p>&#x4E0A;&#x9762;&#x8F93;&#x51FA;&#x7684;&#x7ED3;&#x679C;&#x662F;&#xFF1A;[ 5000.00000002 -2499.75000001]</p>
+<pre data-role="codeBlock" data-info class="language-"><code># 2. &#x6570;&#x636E;&#x51C6;&#x5907;
+X = np.array([[0.999, 2], [2, 4], [4, 8]])
+y = np.array([1, 2, 3])
+
+# &#x6C42;&#x5F97;&#x6A21;&#x578B;&#x53C2;&#x6570;
+lr = LinearRegression()
+lr.fit(X, y)
+print(lr.coef_)
+</code></pre><p>&#x4E0A;&#x9762;&#x7684;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x662F;&#xFF1A;[ 500.   -249.75]</p>
+<pre data-role="codeBlock" data-info class="language-"><code># 3. &#x6570;&#x636E;&#x51C6;&#x5907;
+X = np.array([[0.99, 2], [2, 4], [4, 8]])
+y = np.array([1, 2, 3])
+
+# &#x6C42;&#x5F97;&#x6A21;&#x578B;&#x53C2;&#x6570;
+lr = LinearRegression()
+lr.fit(X, y)
+print(lr.coef_)
+</code></pre><p>&#x4E0A;&#x9762;&#x7684;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x662F;&#xFF1A;[ 50.   -24.75]</p>
+<hr>
+<p>&#x4ECE;&#x4E0A;&#x9762;&#x7684;&#x4E09;&#x6B21;&#x8BD5;&#x9A8C;&#x53EF;&#x4EE5;&#x770B;&#x51FA;&#x6765;&#xFF0C;&#x5F53;&#x8F93;&#x5165;&#x7279;&#x5F81;&#x503C;&#x76F8;&#x5173;&#x6027;&#x8D8A;&#x9AD8;&#xFF0C;&#x6743;&#x91CD;&#x53C2;&#x6570;&#x8D8A;&#x5927;&#xFF1B;&#x4F34;&#x968F;&#x7740;&#x76F8;&#x5173;&#x6027;&#x964D;&#x4F4E;&#xFF0C;&#x6743;&#x91CD;&#x53C2;&#x6570;&#x4E5F;&#x4F1A;&#x51CF;&#x5C0F;&#x3002;</p>
+<hr>
+<ol start="3">
 <li>&#x591A;&#x91CD;&#x5171;&#x7EBF;&#x6027;&#x4E0E;&#x8FC7;&#x62DF;&#x5408;&#x662F;&#x4E0D;&#x662F;&#x4E00;&#x56DE;&#x4E8B;?</li>
 </ol>
 <p>&#x591A;&#x91CD;&#x5171;&#x7EBF;&#x6027;&#x662F;&#x53EF;&#x80FD;&#x5728;&#x8BAD;&#x7EC3;&#x96C6;&#x4E0A;&#x8868;&#x73B0;&#x597D;&#xFF0C;&#x4F46;&#x662F;&#x6D4B;&#x8BD5;&#x96C6;&#x4E0A;&#x8868;&#x73B0;&#x5DEE;&#xFF0C;&#x5BFC;&#x81F4;&#x6A21;&#x578B;&#x6CDB;&#x5316;&#x80FD;&#x529B;&#x5DEE;&#xFF0C;&#x9020;&#x6210;&#x4E86;&#x8FC7;&#x62DF;&#x5408;&#x3002;</p>
