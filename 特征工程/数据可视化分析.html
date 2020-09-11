@@ -490,6 +490,20 @@ plt.show()
 <p>&#x53C2;&#x8003;&#x8D44;&#x6599;&#xFF1A;<br>
 <a href="https://www.zhihu.com/question/26419030?sort=created">&#x5982;&#x4F55;&#x7406;&#x89E3;&#x7F6E;&#x4FE1;&#x533A;&#x95F4;</a><br>
 <a href="https://www.cnblogs.com/cgmcoding/p/13356745.html">sns.barplot&#x753B;&#x6761;&#x5F62;&#x56FE;</a></p>
+<h1 class="mume-header" id="%E7%9B%B4%E6%96%B9%E5%9B%BE">&#x76F4;&#x65B9;&#x56FE;</h1>
+
+<p>&#x76F4;&#x65B9;&#x56FE;&#x7528;&#x6765;&#x5C55;&#x793A;&#x6570;&#x636E;&#x6982;&#x7387;&#x5206;&#x5E03;&#xFF0C;&#x5206;&#x5E03;&#x8D34;&#x8FD1;&#x4E8E;&#x6982;&#x7387;&#x5BC6;&#x5EA6;&#x51FD;&#x6570;&#x56FE;&#x3002;</p>
+<pre data-role="codeBlock" data-info class="language-"><code># &#x5355;&#x72EC;&#x4E00;&#x4E2A;&#x7279;&#x5F81;&#x503C;&#x7684;&#x76F4;&#x65B9;&#x56FE;
+sns.distplot(data.iloc[:, 1:2].sample(500))
+plt.show()
+</code></pre><p><img src="images/%E4%B9%B3%E8%85%BA%E7%99%8C%E6%95%B0%E6%8D%AE%E9%9B%86-%E7%9B%B4%E6%96%B9%E5%9B%BE-%E5%8D%95%E4%B8%AA%E7%89%B9%E5%BE%81%E5%80%BC.png" alt="&#x4E73;&#x817A;&#x764C;&#x6570;&#x636E;&#x96C6;-&#x76F4;&#x65B9;&#x56FE;-&#x5355;&#x4E2A;&#x7279;&#x5F81;&#x503C;"></p>
+<pre data-role="codeBlock" data-info class="language-"><code># &#x591A;&#x4E2A;&#x7279;&#x5F81;&#x503C;&#x7684;&#x76F4;&#x65B9;&#x56FE;
+data6 = data.iloc[:, 1:6].sample(500)
+data6.hist()
+plt.show()
+
+</code></pre><p><img src="images/%E4%B9%B3%E8%85%BA%E7%99%8C%E6%95%B0%E6%8D%AE%E9%9B%86-%E7%9B%B4%E6%96%B9%E5%9B%BE-%E5%A4%9A%E4%B8%AA%E7%89%B9%E5%BE%81%E5%80%BC.png" alt="&#x4E73;&#x817A;&#x764C;&#x6570;&#x636E;&#x96C6;-&#x76F4;&#x65B9;&#x56FE;-&#x591A;&#x4E2A;&#x7279;&#x5F81;&#x503C;"></p>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4ECE;&#x76F4;&#x65B9;&#x56FE;&#x4E2D;&#x770B;&#x51FA;&#xFF0C;&#x54EA;&#x4E9B;&#x7279;&#x5F81;&#x503C;&#x7B26;&#x5408;&#x6B63;&#x592A;&#x5206;&#x5E03;&#xFF0C;&#x54EA;&#x4E9B;&#x4E0D;&#x7B26;&#x5408;&#x3002;&#x540E;&#x7EED;&#x4E00;&#x822C;&#x8981;&#x5BF9;&#x4E0D;&#x7B26;&#x5408;&#x6B63;&#x592A;&#x5206;&#x5E03;&#x7684;&#x7279;&#x5F81;&#x503C;&#x505A;&#x5206;&#x5E03;&#x8F6C;&#x6362;&#x5904;&#x7406;&#xFF0C;&#x6BD4;&#x5982;&#x5BF9;&#x6570;&#x8F6C;&#x6362;&#xFF0C;&#x5BFC;&#x6570;&#x8F6C;&#x6362;&#xFF0C;BOX-COX&#x8F6C;&#x6362;&#x7B49;&#x3002;</p>
 
       </div>
       
