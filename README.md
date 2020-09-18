@@ -18,3 +18,7 @@ export_on_save:
 ## 特征工程
 
 [1. 数据可视化分析](https://sessionliang.github.io/AI/特征工程/数据可视化分析.html)
+
+## 比赛
+
+[1. 零基础入门金融风控-贷款违约预测](https://sessionliang.github.io/AI/比赛/零基础入门-金融风控/零基础入门金融风控-贷款违约预测.html)
