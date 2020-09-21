@@ -21,4 +21,6 @@ export_on_save:
 
 ## 比赛
 
-[1. 零基础入门金融风控-贷款违约预测](https://sessionliang.github.io/AI/比赛/零基础入门-金融风控/零基础入门金融风控-贷款违约预测.html)
+### 1. 零基础入门金融风控-贷款违约预测
+[1.1. 零基础入门金融风控-贷款违约预测-EDA](https://sessionliang.github.io/AI/比赛/零基础入门-金融风控/贷款违约预测-1-EDA.html)
+[1.2. 零基础入门金融风控-贷款违约预测-特征工程](https://sessionliang.github.io/AI/比赛/零基础入门-金融风控/贷款违约预测-2-特征工程.html)
