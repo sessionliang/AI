@@ -13122,7 +13122,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[253]:</div>
+<div class="prompt input_prompt">In&nbsp;[174]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## 1. 导入数据</span>
@@ -13174,7 +13174,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[254]:</div>
+<div class="prompt input_prompt">In&nbsp;[175]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 区分出数值特征和对象特征</span>
@@ -13212,7 +13212,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[255]:</div>
+<div class="prompt input_prompt">In&nbsp;[176]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;train_data 缺失值统计：</span><span class="se">\r\n</span><span class="s2">&quot;</span><span class="p">)</span>
@@ -13344,7 +13344,7 @@ dtype: int64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[256]:</div>
+<div class="prompt input_prompt">In&nbsp;[177]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># employmentTitle, postCode, title只有一条空数据，相对于80w来说，可以忽略不计。我们直接删除这三行数据即可。</span>
@@ -13383,7 +13383,7 @@ train_data title is null: 0
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[257]:</div>
+<div class="prompt input_prompt">In&nbsp;[178]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 数值类型填充中位数</span>
@@ -13529,7 +13529,7 @@ dtype: int64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[258]:</div>
+<div class="prompt input_prompt">In&nbsp;[179]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># employmentLength 通过众数填充失败了，我们通过暂时保留Nan值，因为是分类属性，所以可以假设这个Nan是一个新的类型</span>
@@ -13587,7 +13587,7 @@ Name: employmentLength, dtype: int64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[259]:</div>
+<div class="prompt input_prompt">In&nbsp;[180]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 处理employmentLength</span>
@@ -13654,7 +13654,7 @@ Name: employmentLength, dtype: int64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[260]:</div>
+<div class="prompt input_prompt">In&nbsp;[181]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">object_features</span><span class="p">)</span>
@@ -13685,7 +13685,7 @@ Name: employmentLength, dtype: int64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[261]:</div>
+<div class="prompt input_prompt">In&nbsp;[182]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># grade 可以自映射</span>
@@ -13724,7 +13724,7 @@ Name: grade, dtype: int64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[262]:</div>
+<div class="prompt input_prompt">In&nbsp;[183]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">grade_map</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;A&#39;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;D&#39;</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;E&#39;</span><span class="p">:</span><span class="mi">5</span><span class="p">,</span> <span class="s1">&#39;F&#39;</span><span class="p">:</span><span class="mi">6</span><span class="p">,</span> <span class="s1">&#39;G&#39;</span><span class="p">:</span><span class="mi">7</span><span class="p">}</span>
@@ -13776,7 +13776,7 @@ Name: grade, dtype: int64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[263]:</div>
+<div class="prompt input_prompt">In&nbsp;[184]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># subGrade</span>
@@ -13843,7 +13843,7 @@ Name: subGrade, dtype: int64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[264]:</div>
+<div class="prompt input_prompt">In&nbsp;[185]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># subGrade进行一下替换，子级别和级别</span>
@@ -13956,7 +13956,7 @@ Name: subGrade, dtype: int64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[265]:</div>
+<div class="prompt input_prompt">In&nbsp;[186]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">datetime</span>
@@ -14251,7 +14251,7 @@ Name: issueDateDt, Length: 138, dtype: int64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[266]:</div>
+<div class="prompt input_prompt">In&nbsp;[187]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># earliesCreditLine</span>
@@ -14344,13 +14344,13 @@ Name: earliesCreditLine, Length: 720, dtype: int64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[267]:</div>
+<div class="prompt input_prompt">In&nbsp;[188]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># earliesCreditLine 变成年即可</span>
 <span class="k">def</span> <span class="nf">getYear</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">col</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">strip</span><span class="p">()[</span><span class="o">-</span><span class="mi">4</span><span class="p">:])))</span>
-    <span class="n">data</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">strip</span><span class="p">()[</span><span class="o">-</span><span class="mi">4</span><span class="p">:]))</span>
+    <span class="n">data</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">strip</span><span class="p">()[</span><span class="o">-</span><span class="mi">4</span><span class="p">:])</span> <span class="o">-</span> <span class="mi">2001</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">data</span>
 
 <span class="n">train_data</span> <span class="o">=</span> <span class="n">getYear</span><span class="p">(</span><span class="n">train_data</span><span class="p">,</span> <span class="s1">&#39;earliesCreditLine&#39;</span><span class="p">)</span>
@@ -14499,129 +14499,129 @@ Name: earliesCreditLine, Length: 799997, dtype: int64
 199998    2005
 199999    2002
 Name: earliesCreditLine, Length: 200000, dtype: int64
-1944        1
-1946        2
-1950        5
-1951        7
-1952        6
-1953        5
-1954        5
-1955        9
-1956       11
-1957       15
-1958       24
-1959       40
-1960       58
-1961       53
-1962       83
-1963      117
-1964      170
-1965      234
-1966      238
-1967      382
-1968      431
-1969      582
-1970      588
-1971      643
-1972      964
-1973     1129
-1974     1226
-1975     1427
-1976     1820
-1977     2393
-        ...  
-1986     9205
-1987    10591
-1988    11813
-1989    14163
-1990    15549
-1991    14687
-1992    15891
-1993    22395
-1994    27332
-1995    30501
-1996    32465
-1997    33090
-1998    38850
-1999    45917
-2000    50624
-2001    53194
-2002    51060
-2003    50648
-2004    49280
-2005    44046
-2006    37924
-2007    28464
-2008    18252
-2009    11414
-2010    10613
-2011     9792
-2012     6628
-2013     3525
-2014     1475
-2015      201
+-57        1
+-55        2
+-51        5
+-50        7
+-49        6
+-48        5
+-47        5
+-46        9
+-45       11
+-44       15
+-43       24
+-42       40
+-41       58
+-40       53
+-39       83
+-38      117
+-37      170
+-36      234
+-35      238
+-34      382
+-33      431
+-32      582
+-31      588
+-30      643
+-29      964
+-28     1129
+-27     1226
+-26     1427
+-25     1820
+-24     2393
+       ...  
+-15     9205
+-14    10591
+-13    11813
+-12    14163
+-11    15549
+-10    14687
+-9     15891
+-8     22395
+-7     27332
+-6     30501
+-5     32465
+-4     33090
+-3     38850
+-2     45917
+-1     50624
+ 0     53194
+ 1     51060
+ 2     50648
+ 3     49280
+ 4     44046
+ 5     37924
+ 6     28464
+ 7     18252
+ 8     11414
+ 9     10613
+ 10     9792
+ 11     6628
+ 12     3525
+ 13     1475
+ 14      201
 Name: earliesCreditLine, Length: 68, dtype: int64
-1944        1
-1945        1
-1949        1
-1950        2
-1951        2
-1952        1
-1953        1
-1954        1
-1955        1
-1956        1
-1957        3
-1958        3
-1959       12
-1960        9
-1961       14
-1962       17
-1963       30
-1964       45
-1965       67
-1966       69
-1967       88
-1968      102
-1969      135
-1970      155
-1971      153
-1972      243
-1973      252
-1974      284
-1975      353
-1976      484
-        ...  
-1986     2210
-1987     2625
-1988     2908
-1989     3564
-1990     3964
-1991     3648
-1992     3933
-1993     5486
-1994     6786
-1995     7627
-1996     8187
-1997     8449
-1998     9694
-1999    11525
-2000    12581
-2001    13171
-2002    12833
-2003    12604
-2004    12482
-2005    10991
-2006     9481
-2007     7028
-2008     4445
-2009     2920
-2010     2716
-2011     2490
-2012     1676
-2013      850
-2014      388
-2015       50
+-57        1
+-56        1
+-52        1
+-51        2
+-50        2
+-49        1
+-48        1
+-47        1
+-46        1
+-45        1
+-44        3
+-43        3
+-42       12
+-41        9
+-40       14
+-39       17
+-38       30
+-37       45
+-36       67
+-35       69
+-34       88
+-33      102
+-32      135
+-31      155
+-30      153
+-29      243
+-28      252
+-27      284
+-26      353
+-25      484
+       ...  
+-15     2210
+-14     2625
+-13     2908
+-12     3564
+-11     3964
+-10     3648
+-9      3933
+-8      5486
+-7      6786
+-6      7627
+-5      8187
+-4      8449
+-3      9694
+-2     11525
+-1     12581
+ 0     13171
+ 1     12833
+ 2     12604
+ 3     12482
+ 4     10991
+ 5      9481
+ 6      7028
+ 7      4445
+ 8      2920
+ 9      2716
+ 10     2490
+ 11     1676
+ 12      850
+ 13      388
+ 14       50
 Name: earliesCreditLine, Length: 69, dtype: int64
 </pre>
 </div>
@@ -14633,7 +14633,7 @@ Name: earliesCreditLine, Length: 69, dtype: int64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[268]:</div>
+<div class="prompt input_prompt">In&nbsp;[189]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># homeOwnership</span>
@@ -14671,7 +14671,7 @@ Name: homeOwnership, dtype: int64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[269]:</div>
+<div class="prompt input_prompt">In&nbsp;[190]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># verificationStatus</span>
@@ -14706,7 +14706,7 @@ Name: verificationStatus, dtype: int64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[270]:</div>
+<div class="prompt input_prompt">In&nbsp;[191]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># purpose</span>
@@ -14752,7 +14752,7 @@ Name: purpose, dtype: int64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[271]:</div>
+<div class="prompt input_prompt">In&nbsp;[192]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># regionCode</span>
@@ -14835,7 +14835,7 @@ Name: regionCode, dtype: int64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[272]:</div>
+<div class="prompt input_prompt">In&nbsp;[193]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># applicationType</span>
@@ -14869,7 +14869,7 @@ Name: applicationType, dtype: int64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[273]:</div>
+<div class="prompt input_prompt">In&nbsp;[194]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># initialListStatus</span>
@@ -14903,7 +14903,7 @@ Name: initialListStatus, dtype: int64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[274]:</div>
+<div class="prompt input_prompt">In&nbsp;[195]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># policyCode</span>
@@ -14939,7 +14939,7 @@ Name: policyCode, dtype: int64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[275]:</div>
+<div class="prompt input_prompt">In&nbsp;[196]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 对分类变量做虚拟变量</span>
@@ -14988,7 +14988,7 @@ Index([&#39;id&#39;, &#39;loanAmnt&#39;, &#39;term&#39;, &#39;interestRate&#39;,
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[276]:</div>
+<div class="prompt input_prompt">In&nbsp;[197]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 删除id, policyCode</span>
@@ -15013,7 +15013,7 @@ Index([&#39;id&#39;, &#39;loanAmnt&#39;, &#39;term&#39;, &#39;interestRate&#39;,
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[277]:</div>
+<div class="prompt input_prompt">In&nbsp;[198]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 首先，添加异常值列</span>
@@ -15315,7 +15315,7 @@ Name: isDefault, dtype: int64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[278]:</div>
+<div class="prompt input_prompt">In&nbsp;[199]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">label_result</span> <span class="o">=</span> <span class="n">train_data</span><span class="p">[</span><span class="s1">&#39;isDefault&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
@@ -15347,7 +15347,7 @@ Name: isDefault, dtype: int64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[279]:</div>
+<div class="prompt input_prompt">In&nbsp;[200]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">exception_features</span><span class="p">:</span>
@@ -15478,7 +15478,7 @@ n14
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[280]:</div>
+<div class="prompt input_prompt">In&nbsp;[201]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 需要处理的异常值</span>
@@ -15504,19 +15504,23 @@ n14
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[281]:</div>
+<div class="prompt input_prompt">In&nbsp;[202]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 需要进行分桶的特征值</span>
 <span class="n">binning_features</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;loanAmnt&#39;</span><span class="p">,</span> <span class="s1">&#39;annualIncome&#39;</span><span class="p">,</span> <span class="s1">&#39;openAcc&#39;</span><span class="p">,</span> <span class="s1">&#39;pubRec&#39;</span><span class="p">,</span> <span class="s1">&#39;pubRecBankruptcies&#39;</span><span class="p">,</span> <span class="s1">&#39;totalAcc&#39;</span><span class="p">]</span>
 
-<span class="c1"># 以1000为单位，进行分箱</span>
+<span class="c1"># 金额以1000为单位</span>
 <span class="n">train_data</span><span class="p">[</span><span class="s1">&#39;loanAmnt_bin&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">floor_divide</span><span class="p">(</span><span class="n">train_data</span><span class="p">[</span><span class="s1">&#39;loanAmnt&#39;</span><span class="p">],</span> <span class="mi">1000</span><span class="p">)</span>
-<span class="n">train_data</span><span class="p">[</span><span class="s1">&#39;annualIncome_bin&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">floor_divide</span><span class="p">(</span><span class="n">train_data</span><span class="p">[</span><span class="s1">&#39;annualIncome&#39;</span><span class="p">],</span> <span class="mi">1000</span><span class="p">)</span>
-<span class="n">train_data</span><span class="p">[</span><span class="s1">&#39;totalAcc_bin&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">floor_divide</span><span class="p">(</span><span class="n">train_data</span><span class="p">[</span><span class="s1">&#39;totalAcc&#39;</span><span class="p">],</span> <span class="mi">1000</span><span class="p">)</span>
 <span class="n">test_data</span><span class="p">[</span><span class="s1">&#39;loanAmnt_bin&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">floor_divide</span><span class="p">(</span><span class="n">test_data</span><span class="p">[</span><span class="s1">&#39;loanAmnt&#39;</span><span class="p">],</span> <span class="mi">1000</span><span class="p">)</span>
+<span class="n">train_data</span><span class="p">[</span><span class="s1">&#39;annualIncome_bin&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">floor_divide</span><span class="p">(</span><span class="n">train_data</span><span class="p">[</span><span class="s1">&#39;annualIncome&#39;</span><span class="p">],</span> <span class="mi">1000</span><span class="p">)</span>
 <span class="n">test_data</span><span class="p">[</span><span class="s1">&#39;annualIncome_bin&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">floor_divide</span><span class="p">(</span><span class="n">test_data</span><span class="p">[</span><span class="s1">&#39;annualIncome&#39;</span><span class="p">],</span> <span class="mi">1000</span><span class="p">)</span>
-<span class="n">test_data</span><span class="p">[</span><span class="s1">&#39;totalAcc_bin&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">floor_divide</span><span class="p">(</span><span class="n">test_data</span><span class="p">[</span><span class="s1">&#39;totalAcc&#39;</span><span class="p">],</span> <span class="mi">1000</span><span class="p">)</span>
+
+<span class="c1"># 事件以10位单位</span>
+<span class="n">train_data</span><span class="p">[</span><span class="s1">&#39;totalAcc_bin&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">floor_divide</span><span class="p">(</span><span class="n">train_data</span><span class="p">[</span><span class="s1">&#39;totalAcc&#39;</span><span class="p">],</span> <span class="mi">10</span><span class="p">)</span>
+<span class="n">test_data</span><span class="p">[</span><span class="s1">&#39;totalAcc_bin&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">floor_divide</span><span class="p">(</span><span class="n">test_data</span><span class="p">[</span><span class="s1">&#39;totalAcc&#39;</span><span class="p">],</span> <span class="mi">10</span><span class="p">)</span>
+<span class="n">train_data</span><span class="p">[</span><span class="s1">&#39;openAcc_bin&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">floor_divide</span><span class="p">(</span><span class="n">train_data</span><span class="p">[</span><span class="s1">&#39;openAcc&#39;</span><span class="p">],</span> <span class="mi">10</span><span class="p">)</span>
+<span class="n">test_data</span><span class="p">[</span><span class="s1">&#39;openAcc_bin&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">floor_divide</span><span class="p">(</span><span class="n">test_data</span><span class="p">[</span><span class="s1">&#39;openAcc&#39;</span><span class="p">],</span> <span class="mi">10</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -15526,16 +15530,14 @@ n14
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[282]:</div>
+<div class="prompt input_prompt">In&nbsp;[203]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 中位数分箱</span>
-<span class="n">train_data</span><span class="p">[</span><span class="s1">&#39;openAcc_bin&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">qcut</span><span class="p">(</span><span class="n">train_data</span><span class="p">[</span><span class="s1">&#39;openAcc&#39;</span><span class="p">],</span> <span class="mi">10</span><span class="p">,</span> <span class="n">labels</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">duplicates</span><span class="o">=</span><span class="s1">&#39;drop&#39;</span><span class="p">)</span>
 <span class="n">train_data</span><span class="p">[</span><span class="s1">&#39;pubRec_bin&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">qcut</span><span class="p">(</span><span class="n">train_data</span><span class="p">[</span><span class="s1">&#39;pubRec&#39;</span><span class="p">],</span> <span class="mi">10</span><span class="p">,</span> <span class="n">labels</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">duplicates</span><span class="o">=</span><span class="s1">&#39;drop&#39;</span><span class="p">)</span>
-<span class="n">train_data</span><span class="p">[</span><span class="s1">&#39;pubRecBankruptcies_bin&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">qcut</span><span class="p">(</span><span class="n">train_data</span><span class="p">[</span><span class="s1">&#39;pubRecBankruptcies&#39;</span><span class="p">],</span> <span class="mi">10</span><span class="p">,</span> <span class="n">labels</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">duplicates</span><span class="o">=</span><span class="s1">&#39;drop&#39;</span><span class="p">)</span>
-<span class="n">test_data</span><span class="p">[</span><span class="s1">&#39;openAcc_bin&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">qcut</span><span class="p">(</span><span class="n">test_data</span><span class="p">[</span><span class="s1">&#39;openAcc&#39;</span><span class="p">],</span> <span class="mi">10</span><span class="p">,</span> <span class="n">labels</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">duplicates</span><span class="o">=</span><span class="s1">&#39;drop&#39;</span><span class="p">)</span>
+<span class="c1"># train_data[&#39;pubRecBankruptcies_bin&#39;] = pd.qcut(train_data[&#39;pubRecBankruptcies&#39;], 10, labels=False, duplicates=&#39;drop&#39;)</span>
 <span class="n">test_data</span><span class="p">[</span><span class="s1">&#39;pubRec_bin&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">qcut</span><span class="p">(</span><span class="n">test_data</span><span class="p">[</span><span class="s1">&#39;pubRec&#39;</span><span class="p">],</span> <span class="mi">10</span><span class="p">,</span> <span class="n">labels</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">duplicates</span><span class="o">=</span><span class="s1">&#39;drop&#39;</span><span class="p">)</span>
-<span class="n">test_data</span><span class="p">[</span><span class="s1">&#39;pubRecBankruptcies_bin&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">qcut</span><span class="p">(</span><span class="n">test_data</span><span class="p">[</span><span class="s1">&#39;pubRecBankruptcies&#39;</span><span class="p">],</span> <span class="mi">10</span><span class="p">,</span> <span class="n">labels</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">duplicates</span><span class="o">=</span><span class="s1">&#39;drop&#39;</span><span class="p">)</span>
+<span class="c1"># test_data[&#39;pubRecBankruptcies_bin&#39;] = pd.qcut(test_data[&#39;pubRecBankruptcies&#39;], 10, labels=False, duplicates=&#39;drop&#39;)</span>
 </pre></div>
 
     </div>
@@ -15543,53 +15545,33 @@ n14
 </div>
 
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[283]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## 2.5 特征交互</span>
-
-<span class="n">EDA中分析的</span><span class="err">，</span><span class="n">pubRec</span><span class="p">,</span><span class="n">pubRecBankruptcies和delinquency_2years做交叉应该会对模型有帮助</span><span class="err">。</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-cyan-intense-fg ansi-bold">  File </span><span class="ansi-green-intense-fg ansi-bold">&#34;&lt;ipython-input-283-e2c6c4af514e&gt;&#34;</span><span class="ansi-cyan-intense-fg ansi-bold">, line </span><span class="ansi-green-intense-fg ansi-bold">3</span>
-<span class="ansi-yellow-intense-fg ansi-bold">    EDA中分析的，pubRec,pubRecBankruptcies和delinquency_2years做交叉应该会对模型有帮助。</span>
-<span class="ansi-white-intense-fg ansi-bold">                 ^</span>
-<span class="ansi-red-intense-fg ansi-bold">SyntaxError</span><span class="ansi-red-intense-fg ansi-bold">:</span> invalid character in identifier
-</pre>
-</div>
-</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="2.5-&#29305;&#24449;&#20132;&#20114;">2.5 &#29305;&#24449;&#20132;&#20114;<a class="anchor-link" href="#2.5-&#29305;&#24449;&#20132;&#20114;">&#182;</a></h2><p>EDA中分析的，pubRec,pubRecBankruptcies和delinquency_2years做交叉应该会对模型有帮助。</p>
 
 </div>
 </div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[284]:</div>
+<div class="prompt input_prompt">In&nbsp;[204]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 
-<span class="n">train_data</span><span class="p">[</span><span class="s1">&#39;pubRec_num&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">train_data</span><span class="p">[</span><span class="s1">&#39;pubRec&#39;</span><span class="p">]</span> <span class="o">-</span> <span class="n">train_data</span><span class="p">[</span><span class="s1">&#39;pubRecBankruptcies&#39;</span><span class="p">]</span>
-<span class="n">test_data</span><span class="p">[</span><span class="s1">&#39;pubRec_num&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">test_data</span><span class="p">[</span><span class="s1">&#39;pubRec&#39;</span><span class="p">]</span> <span class="o">-</span> <span class="n">test_data</span><span class="p">[</span><span class="s1">&#39;pubRecBankruptcies&#39;</span><span class="p">]</span>
+<span class="c1"># 做一个比值</span>
+<span class="n">train_data</span><span class="p">[</span><span class="s1">&#39;pubRecBankruptciesPercent&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">train_data</span><span class="p">[</span><span class="s1">&#39;pubRecBankruptcies&#39;</span><span class="p">]</span> <span class="o">/</span> <span class="n">train_data</span><span class="p">[</span><span class="s1">&#39;pubRec&#39;</span><span class="p">]</span>
+<span class="n">test_data</span><span class="p">[</span><span class="s1">&#39;pubRecBankruptciesPercent&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">test_data</span><span class="p">[</span><span class="s1">&#39;pubRecBankruptcies&#39;</span><span class="p">]</span> <span class="o">/</span> <span class="n">test_data</span><span class="p">[</span><span class="s1">&#39;pubRec&#39;</span><span class="p">]</span>
+
+<span class="c1"># debt</span>
+<span class="n">train_data</span><span class="p">[</span><span class="s1">&#39;debt&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">train_data</span><span class="p">[</span><span class="s1">&#39;annualIncome&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="n">train_data</span><span class="p">[</span><span class="s1">&#39;employmentLength&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="n">train_data</span><span class="p">[</span><span class="s1">&#39;dti&#39;</span><span class="p">]</span>
+<span class="n">test_data</span><span class="p">[</span><span class="s1">&#39;debt&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">test_data</span><span class="p">[</span><span class="s1">&#39;annualIncome&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="n">test_data</span><span class="p">[</span><span class="s1">&#39;employmentLength&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="n">test_data</span><span class="p">[</span><span class="s1">&#39;dti&#39;</span><span class="p">]</span>
+
+<span class="c1"># continuePayPercent 持续还款几率</span>
+<span class="n">train_data</span><span class="p">[</span><span class="s1">&#39;continuePayPercent&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">train_data</span><span class="p">[</span><span class="s1">&#39;installment&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="n">train_data</span><span class="p">[</span><span class="s1">&#39;annualIncome&#39;</span><span class="p">]</span> <span class="o">/</span> <span class="mi">12</span>
+<span class="n">test_data</span><span class="p">[</span><span class="s1">&#39;continuePayPercent&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">test_data</span><span class="p">[</span><span class="s1">&#39;installment&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="n">test_data</span><span class="p">[</span><span class="s1">&#39;annualIncome&#39;</span><span class="p">]</span> <span class="o">/</span> <span class="mi">12</span>
 </pre></div>
 
     </div>
@@ -15599,13 +15581,29 @@ n14
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[285]:</div>
+<div class="prompt input_prompt">In&nbsp;[205]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">df</span> <span class="ow">in</span> <span class="p">[</span><span class="n">train_data</span><span class="p">,</span> <span class="n">test_data</span><span class="p">]:</span> 
     <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;n0&#39;</span><span class="p">,</span><span class="s1">&#39;n1&#39;</span><span class="p">,</span><span class="s1">&#39;n2&#39;</span><span class="p">,</span><span class="s1">&#39;n3&#39;</span><span class="p">,</span><span class="s1">&#39;n4&#39;</span><span class="p">,</span><span class="s1">&#39;n5&#39;</span><span class="p">,</span><span class="s1">&#39;n6&#39;</span><span class="p">,</span><span class="s1">&#39;n7&#39;</span><span class="p">,</span><span class="s1">&#39;n8&#39;</span><span class="p">,</span><span class="s1">&#39;n9&#39;</span><span class="p">,</span><span class="s1">&#39;n10&#39;</span><span class="p">,</span><span class="s1">&#39;n11&#39;</span><span class="p">,</span><span class="s1">&#39;n12&#39;</span><span class="p">,</span><span class="s1">&#39;n13&#39;</span><span class="p">,</span><span class="s1">&#39;n14&#39;</span><span class="p">]:</span> 
         <span class="n">df</span><span class="p">[</span><span class="s1">&#39;grade_to_mean_&#39;</span> <span class="o">+</span> <span class="n">item</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;grade&#39;</span><span class="p">]</span> <span class="o">/</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="n">item</span><span class="p">])</span> <span class="p">[</span><span class="s1">&#39;grade&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="s1">&#39;mean&#39;</span><span class="p">)</span>
         <span class="n">df</span><span class="p">[</span><span class="s1">&#39;grade_to_std_&#39;</span> <span class="o">+</span> <span class="n">item</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;grade&#39;</span><span class="p">]</span> <span class="o">/</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="n">item</span><span class="p">])</span> <span class="p">[</span><span class="s1">&#39;grade&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="s1">&#39;std&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[206]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">df</span> <span class="ow">in</span> <span class="p">[</span><span class="n">train_data</span><span class="p">,</span> <span class="n">test_data</span><span class="p">]:</span>
+    <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;grade&#39;</span><span class="p">,</span> <span class="s1">&#39;term&#39;</span><span class="p">,</span> <span class="s1">&#39;postCode&#39;</span><span class="p">]:</span>
+        <span class="n">df</span><span class="p">[</span><span class="s1">&#39;loanAmnt_to_mean_&#39;</span> <span class="o">+</span> <span class="n">item</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;loanAmnt&#39;</span><span class="p">]</span> <span class="o">/</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="n">item</span><span class="p">])</span> <span class="p">[</span><span class="s1">&#39;loanAmnt&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="s1">&#39;mean&#39;</span><span class="p">)</span>
+        <span class="n">df</span><span class="p">[</span><span class="s1">&#39;annualIncome_to_mean_&#39;</span> <span class="o">+</span> <span class="n">item</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;annualIncome&#39;</span><span class="p">]</span> <span class="o">/</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="n">item</span><span class="p">])</span> <span class="p">[</span><span class="s1">&#39;annualIncome&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="s1">&#39;mean&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -15629,12 +15627,12 @@ n14
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[286]:</div>
+<div class="prompt input_prompt">In&nbsp;[207]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## 2.8 简单预测</span>
 
-<span class="n">features</span> <span class="o">=</span> <span class="p">[</span><span class="n">f</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">train_data</span><span class="o">.</span><span class="n">columns</span> <span class="k">if</span> <span class="n">f</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">,</span> <span class="s1">&#39;issueDate&#39;</span><span class="p">,</span> <span class="s1">&#39;isDefault&#39;</span><span class="p">]</span> <span class="ow">and</span> <span class="s1">&#39;_outliers&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">f</span><span class="p">]</span> 
+<span class="n">features</span> <span class="o">=</span> <span class="p">[</span><span class="n">f</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">train_data</span><span class="o">.</span><span class="n">columns</span> <span class="k">if</span> <span class="n">f</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">,</span> <span class="s1">&#39;issueDate&#39;</span><span class="p">,</span> <span class="s1">&#39;isDefault&#39;</span><span class="p">,</span> <span class="s1">&#39;loanAmnt&#39;</span><span class="p">,</span> <span class="s1">&#39;annualIncome&#39;</span><span class="p">,</span> <span class="s1">&#39;totalAcc&#39;</span><span class="p">,</span> <span class="s1">&#39;openAcc&#39;</span><span class="p">,</span> <span class="s1">&#39;pubRec&#39;</span><span class="p">]</span> <span class="ow">and</span> <span class="s1">&#39;_outliers&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">f</span><span class="p">]</span> 
 <span class="n">x_train</span> <span class="o">=</span> <span class="n">train_data</span><span class="p">[</span><span class="n">features</span><span class="p">]</span> 
 <span class="n">x_test</span> <span class="o">=</span> <span class="n">test_data</span><span class="p">[</span><span class="n">features</span><span class="p">]</span> 
 <span class="n">y_train</span> <span class="o">=</span> <span class="n">train_data</span><span class="p">[</span><span class="s1">&#39;isDefault&#39;</span><span class="p">]</span>
@@ -15656,7 +15654,7 @@ n14
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[&#39;loanAmnt&#39;, &#39;term&#39;, &#39;interestRate&#39;, &#39;installment&#39;, &#39;grade&#39;, &#39;subGrade&#39;, &#39;employmentTitle&#39;, &#39;employmentLength&#39;, &#39;annualIncome&#39;, &#39;postCode&#39;, &#39;dti&#39;, &#39;delinquency_2years&#39;, &#39;ficoRangeLow&#39;, &#39;ficoRangeHigh&#39;, &#39;openAcc&#39;, &#39;pubRec&#39;, &#39;pubRecBankruptcies&#39;, &#39;revolBal&#39;, &#39;revolUtil&#39;, &#39;totalAcc&#39;, &#39;initialListStatus&#39;, &#39;applicationType&#39;, &#39;earliesCreditLine&#39;, &#39;title&#39;, &#39;n0&#39;, &#39;n1&#39;, &#39;n2&#39;, &#39;n3&#39;, &#39;n4&#39;, &#39;n5&#39;, &#39;n6&#39;, &#39;n7&#39;, &#39;n8&#39;, &#39;n9&#39;, &#39;n10&#39;, &#39;n11&#39;, &#39;n12&#39;, &#39;n13&#39;, &#39;n14&#39;, &#39;issueDateDt&#39;, &#39;homeOwnership_1&#39;, &#39;homeOwnership_2&#39;, &#39;homeOwnership_3&#39;, &#39;homeOwnership_4&#39;, &#39;homeOwnership_5&#39;, &#39;verificationStatus_1&#39;, &#39;verificationStatus_2&#39;, &#39;purpose_1&#39;, &#39;purpose_2&#39;, &#39;purpose_3&#39;, &#39;purpose_4&#39;, &#39;purpose_5&#39;, &#39;purpose_6&#39;, &#39;purpose_7&#39;, &#39;purpose_8&#39;, &#39;purpose_9&#39;, &#39;purpose_10&#39;, &#39;purpose_11&#39;, &#39;purpose_12&#39;, &#39;purpose_13&#39;, &#39;regionCode_1&#39;, &#39;regionCode_2&#39;, &#39;regionCode_3&#39;, &#39;regionCode_4&#39;, &#39;regionCode_5&#39;, &#39;regionCode_6&#39;, &#39;regionCode_7&#39;, &#39;regionCode_8&#39;, &#39;regionCode_9&#39;, &#39;regionCode_10&#39;, &#39;regionCode_11&#39;, &#39;regionCode_12&#39;, &#39;regionCode_13&#39;, &#39;regionCode_14&#39;, &#39;regionCode_15&#39;, &#39;regionCode_16&#39;, &#39;regionCode_17&#39;, &#39;regionCode_18&#39;, &#39;regionCode_19&#39;, &#39;regionCode_20&#39;, &#39;regionCode_21&#39;, &#39;regionCode_22&#39;, &#39;regionCode_23&#39;, &#39;regionCode_24&#39;, &#39;regionCode_25&#39;, &#39;regionCode_26&#39;, &#39;regionCode_27&#39;, &#39;regionCode_28&#39;, &#39;regionCode_29&#39;, &#39;regionCode_30&#39;, &#39;regionCode_31&#39;, &#39;regionCode_32&#39;, &#39;regionCode_33&#39;, &#39;regionCode_34&#39;, &#39;regionCode_35&#39;, &#39;regionCode_36&#39;, &#39;regionCode_37&#39;, &#39;regionCode_38&#39;, &#39;regionCode_39&#39;, &#39;regionCode_40&#39;, &#39;regionCode_41&#39;, &#39;regionCode_42&#39;, &#39;regionCode_43&#39;, &#39;regionCode_44&#39;, &#39;regionCode_45&#39;, &#39;regionCode_46&#39;, &#39;regionCode_47&#39;, &#39;regionCode_48&#39;, &#39;regionCode_49&#39;, &#39;regionCode_50&#39;, &#39;loanAmnt_bin&#39;, &#39;annualIncome_bin&#39;, &#39;totalAcc_bin&#39;, &#39;openAcc_bin&#39;, &#39;pubRec_bin&#39;, &#39;pubRecBankruptcies_bin&#39;, &#39;pubRec_num&#39;, &#39;grade_to_mean_n0&#39;, &#39;grade_to_std_n0&#39;, &#39;grade_to_mean_n1&#39;, &#39;grade_to_std_n1&#39;, &#39;grade_to_mean_n2&#39;, &#39;grade_to_std_n2&#39;, &#39;grade_to_mean_n3&#39;, &#39;grade_to_std_n3&#39;, &#39;grade_to_mean_n4&#39;, &#39;grade_to_std_n4&#39;, &#39;grade_to_mean_n5&#39;, &#39;grade_to_std_n5&#39;, &#39;grade_to_mean_n6&#39;, &#39;grade_to_std_n6&#39;, &#39;grade_to_mean_n7&#39;, &#39;grade_to_std_n7&#39;, &#39;grade_to_mean_n8&#39;, &#39;grade_to_std_n8&#39;, &#39;grade_to_mean_n9&#39;, &#39;grade_to_std_n9&#39;, &#39;grade_to_mean_n10&#39;, &#39;grade_to_std_n10&#39;, &#39;grade_to_mean_n11&#39;, &#39;grade_to_std_n11&#39;, &#39;grade_to_mean_n12&#39;, &#39;grade_to_std_n12&#39;, &#39;grade_to_mean_n13&#39;, &#39;grade_to_std_n13&#39;, &#39;grade_to_mean_n14&#39;, &#39;grade_to_std_n14&#39;]
+<pre>[&#39;term&#39;, &#39;interestRate&#39;, &#39;installment&#39;, &#39;grade&#39;, &#39;subGrade&#39;, &#39;employmentTitle&#39;, &#39;employmentLength&#39;, &#39;postCode&#39;, &#39;dti&#39;, &#39;delinquency_2years&#39;, &#39;ficoRangeLow&#39;, &#39;ficoRangeHigh&#39;, &#39;pubRecBankruptcies&#39;, &#39;revolBal&#39;, &#39;revolUtil&#39;, &#39;initialListStatus&#39;, &#39;applicationType&#39;, &#39;earliesCreditLine&#39;, &#39;title&#39;, &#39;n0&#39;, &#39;n1&#39;, &#39;n2&#39;, &#39;n3&#39;, &#39;n4&#39;, &#39;n5&#39;, &#39;n6&#39;, &#39;n7&#39;, &#39;n8&#39;, &#39;n9&#39;, &#39;n10&#39;, &#39;n11&#39;, &#39;n12&#39;, &#39;n13&#39;, &#39;n14&#39;, &#39;issueDateDt&#39;, &#39;homeOwnership_1&#39;, &#39;homeOwnership_2&#39;, &#39;homeOwnership_3&#39;, &#39;homeOwnership_4&#39;, &#39;homeOwnership_5&#39;, &#39;verificationStatus_1&#39;, &#39;verificationStatus_2&#39;, &#39;purpose_1&#39;, &#39;purpose_2&#39;, &#39;purpose_3&#39;, &#39;purpose_4&#39;, &#39;purpose_5&#39;, &#39;purpose_6&#39;, &#39;purpose_7&#39;, &#39;purpose_8&#39;, &#39;purpose_9&#39;, &#39;purpose_10&#39;, &#39;purpose_11&#39;, &#39;purpose_12&#39;, &#39;purpose_13&#39;, &#39;regionCode_1&#39;, &#39;regionCode_2&#39;, &#39;regionCode_3&#39;, &#39;regionCode_4&#39;, &#39;regionCode_5&#39;, &#39;regionCode_6&#39;, &#39;regionCode_7&#39;, &#39;regionCode_8&#39;, &#39;regionCode_9&#39;, &#39;regionCode_10&#39;, &#39;regionCode_11&#39;, &#39;regionCode_12&#39;, &#39;regionCode_13&#39;, &#39;regionCode_14&#39;, &#39;regionCode_15&#39;, &#39;regionCode_16&#39;, &#39;regionCode_17&#39;, &#39;regionCode_18&#39;, &#39;regionCode_19&#39;, &#39;regionCode_20&#39;, &#39;regionCode_21&#39;, &#39;regionCode_22&#39;, &#39;regionCode_23&#39;, &#39;regionCode_24&#39;, &#39;regionCode_25&#39;, &#39;regionCode_26&#39;, &#39;regionCode_27&#39;, &#39;regionCode_28&#39;, &#39;regionCode_29&#39;, &#39;regionCode_30&#39;, &#39;regionCode_31&#39;, &#39;regionCode_32&#39;, &#39;regionCode_33&#39;, &#39;regionCode_34&#39;, &#39;regionCode_35&#39;, &#39;regionCode_36&#39;, &#39;regionCode_37&#39;, &#39;regionCode_38&#39;, &#39;regionCode_39&#39;, &#39;regionCode_40&#39;, &#39;regionCode_41&#39;, &#39;regionCode_42&#39;, &#39;regionCode_43&#39;, &#39;regionCode_44&#39;, &#39;regionCode_45&#39;, &#39;regionCode_46&#39;, &#39;regionCode_47&#39;, &#39;regionCode_48&#39;, &#39;regionCode_49&#39;, &#39;regionCode_50&#39;, &#39;loanAmnt_bin&#39;, &#39;annualIncome_bin&#39;, &#39;totalAcc_bin&#39;, &#39;openAcc_bin&#39;, &#39;pubRec_bin&#39;, &#39;pubRecBankruptciesPercent&#39;, &#39;debt&#39;, &#39;continuePayPercent&#39;, &#39;grade_to_mean_n0&#39;, &#39;grade_to_std_n0&#39;, &#39;grade_to_mean_n1&#39;, &#39;grade_to_std_n1&#39;, &#39;grade_to_mean_n2&#39;, &#39;grade_to_std_n2&#39;, &#39;grade_to_mean_n3&#39;, &#39;grade_to_std_n3&#39;, &#39;grade_to_mean_n4&#39;, &#39;grade_to_std_n4&#39;, &#39;grade_to_mean_n5&#39;, &#39;grade_to_std_n5&#39;, &#39;grade_to_mean_n6&#39;, &#39;grade_to_std_n6&#39;, &#39;grade_to_mean_n7&#39;, &#39;grade_to_std_n7&#39;, &#39;grade_to_mean_n8&#39;, &#39;grade_to_std_n8&#39;, &#39;grade_to_mean_n9&#39;, &#39;grade_to_std_n9&#39;, &#39;grade_to_mean_n10&#39;, &#39;grade_to_std_n10&#39;, &#39;grade_to_mean_n11&#39;, &#39;grade_to_std_n11&#39;, &#39;grade_to_mean_n12&#39;, &#39;grade_to_std_n12&#39;, &#39;grade_to_mean_n13&#39;, &#39;grade_to_std_n13&#39;, &#39;grade_to_mean_n14&#39;, &#39;grade_to_std_n14&#39;, &#39;loanAmnt_to_mean_grade&#39;, &#39;annualIncome_to_mean_grade&#39;, &#39;loanAmnt_to_mean_term&#39;, &#39;annualIncome_to_mean_term&#39;, &#39;loanAmnt_to_mean_postCode&#39;, &#39;annualIncome_to_mean_postCode&#39;]
 </pre>
 </div>
 </div>
@@ -15667,7 +15665,7 @@ n14
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[294]:</div>
+<div class="prompt input_prompt">In&nbsp;[208]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># import xgboost as xgb </span>
@@ -15738,7 +15736,7 @@ n14
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[295]:</div>
+<div class="prompt input_prompt">In&nbsp;[211]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">lgb_train</span><span class="p">,</span> <span class="n">lgb_test</span> <span class="o">=</span> <span class="n">lgb_model</span><span class="p">(</span><span class="n">x_train</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:</span><span class="mi">10000</span><span class="p">,</span> <span class="p">:],</span> <span class="n">y_train</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:</span><span class="mi">10000</span><span class="p">],</span> <span class="n">x_test</span><span class="p">)</span>
@@ -15762,49 +15760,71 @@ n14
 [LightGBM] [Warning] num_threads is set with nthread=28, will be overridden by n_jobs=24. Current value: num_threads=24
 [LightGBM] [Warning] Unknown parameter: silent
 Training until validation scores don&#39;t improve for 200 rounds
-[200]	training&#39;s auc: 0.990421	valid_1&#39;s auc: 0.70711
+[200]	training&#39;s auc: 0.789551	valid_1&#39;s auc: 0.729389
 Early stopping, best iteration is:
-[36]	training&#39;s auc: 0.838305	valid_1&#39;s auc: 0.726466
-[0.7264657004655278]
+[111]	training&#39;s auc: 0.766836	valid_1&#39;s auc: 0.72997
+[0.7299703512560543]
 ************************************ 2 ************************************
 [LightGBM] [Warning] num_threads is set with nthread=28, will be overridden by n_jobs=24. Current value: num_threads=24
 [LightGBM] [Warning] Unknown parameter: silent
 Training until validation scores don&#39;t improve for 200 rounds
-[200]	training&#39;s auc: 0.989481	valid_1&#39;s auc: 0.680084
+[200]	training&#39;s auc: 0.790423	valid_1&#39;s auc: 0.72769
 Early stopping, best iteration is:
-[33]	training&#39;s auc: 0.834603	valid_1&#39;s auc: 0.700719
-[0.7264657004655278, 0.7007189764492754]
+[150]	training&#39;s auc: 0.777819	valid_1&#39;s auc: 0.728225
+[0.7299703512560543, 0.7282254956754374]
 ************************************ 3 ************************************
 [LightGBM] [Warning] num_threads is set with nthread=28, will be overridden by n_jobs=24. Current value: num_threads=24
 [LightGBM] [Warning] Unknown parameter: silent
 Training until validation scores don&#39;t improve for 200 rounds
-[200]	training&#39;s auc: 0.99023	valid_1&#39;s auc: 0.686777
+[200]	training&#39;s auc: 0.790846	valid_1&#39;s auc: 0.729038
 Early stopping, best iteration is:
-[74]	training&#39;s auc: 0.907537	valid_1&#39;s auc: 0.696864
-[0.7264657004655278, 0.7007189764492754, 0.6968643762872526]
+[134]	training&#39;s auc: 0.774268	valid_1&#39;s auc: 0.729292
+[0.7299703512560543, 0.7282254956754374, 0.7292919498203867]
 ************************************ 4 ************************************
 [LightGBM] [Warning] num_threads is set with nthread=28, will be overridden by n_jobs=24. Current value: num_threads=24
 [LightGBM] [Warning] Unknown parameter: silent
 Training until validation scores don&#39;t improve for 200 rounds
-[200]	training&#39;s auc: 0.990743	valid_1&#39;s auc: 0.685476
+[200]	training&#39;s auc: 0.790133	valid_1&#39;s auc: 0.727637
 Early stopping, best iteration is:
-[29]	training&#39;s auc: 0.823064	valid_1&#39;s auc: 0.704631
-[0.7264657004655278, 0.7007189764492754, 0.6968643762872526, 0.7046310783862556]
+[129]	training&#39;s auc: 0.772457	valid_1&#39;s auc: 0.727786
+[0.7299703512560543, 0.7282254956754374, 0.7292919498203867, 0.7277861232340266]
 ************************************ 5 ************************************
 [LightGBM] [Warning] num_threads is set with nthread=28, will be overridden by n_jobs=24. Current value: num_threads=24
 [LightGBM] [Warning] Unknown parameter: silent
 Training until validation scores don&#39;t improve for 200 rounds
-[200]	training&#39;s auc: 0.989346	valid_1&#39;s auc: 0.691447
+[200]	training&#39;s auc: 0.791297	valid_1&#39;s auc: 0.726462
 Early stopping, best iteration is:
-[64]	training&#39;s auc: 0.893096	valid_1&#39;s auc: 0.711474
-[0.7264657004655278, 0.7007189764492754, 0.6968643762872526, 0.7046310783862556, 0.7114737626082658]
-lgb_scotrainre_list: [0.7264657004655278, 0.7007189764492754, 0.6968643762872526, 0.7046310783862556, 0.7114737626082658]
-lgb_score_mean: 0.7080307788393154
-lgb_score_std: 0.010405858310721845
+[157]	training&#39;s auc: 0.780329	valid_1&#39;s auc: 0.727283
+[0.7299703512560543, 0.7282254956754374, 0.7292919498203867, 0.7277861232340266, 0.7272834391365219]
+lgb_scotrainre_list: [0.7299703512560543, 0.7282254956754374, 0.7292919498203867, 0.7277861232340266, 0.7272834391365219]
+lgb_score_mean: 0.7285114718244854
+lgb_score_std: 0.0009852362474201263
 </pre>
 </div>
 </div>
 
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="2.8-&#20445;&#23384;&#25968;&#25454;">2.8 &#20445;&#23384;&#25968;&#25454;<a class="anchor-link" href="#2.8-&#20445;&#23384;&#25968;&#25454;">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[224]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x_train</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;./data/processed_train.csv&#39;</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">features</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">x_test</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;./data/processed_test.csv&#39;</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">features</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">y_train</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;./data/label.csv&#39;</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;isDefault&#39;</span><span class="p">],</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+
+    </div>
 </div>
 </div>
 
@@ -15814,7 +15834,7 @@ lgb_score_std: 0.010405858310721845
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 时间关系，最后部分代码只来得及测试，没有详细看，抱歉！！！</span>
+<div class=" highlight hl-ipython3"><pre><span></span> 
 </pre></div>
 
     </div>
